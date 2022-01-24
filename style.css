@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Rubik', sans-serif;
+}
+.container {
+    width: 67rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    gap: 1.2rem;
+}
+.left {
+    height: 29.2rem;
+}
+.main {
+    height: 100%;
+}
+.top {
+    padding: 1.5rem;
+    background-color: hsl(246, 80%, 60%);
+    height: 65%;
+    padding: 1.2rem;
+}
+.name {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.bottom {
+    padding: 1.8rem;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main, .info {
+    background-color: hsl(235, 46%, 20%);
+}
+.user-image {
+    width: 4.5rem;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+}
+a {
+    text-decoration: none;
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+section {
+    position: relative;
+    height: 14rem;
+    width: 15rem;
+    overflow: hidden;
+}
+.icon {
+    position: absolute;
+    top: -0.4rem;
+    right: 1rem;
+}
+.info {
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    padding: 1.8rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+h4 {
+    font-weight: 400;
+}
+.hours {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: hsl(0, 0%, 100%);
+}
+main p {
+    color: hsl(236, 100%, 87%);
+    font-size: 0.9rem;
+}
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+.play {
+    background-color: hsl(195, 74%, 62%);
+}
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+}
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+.self-care {
+    background-color: hsl(43, 84%, 65%);
+}
