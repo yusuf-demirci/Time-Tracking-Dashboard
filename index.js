@@ -104,19 +104,19 @@ const data = [
   ]
 
   $(".time-info").click(function(){
-      $(".time-info").removeClass("selected")
-      $(this).addClass("selected")
+      $(".time-info").removeClass("selected");
+      $(this).addClass("selected");
      
       let time = this.innerText.toLowerCase();
       let recentTime;
 
-      if (time === "daily") recentTime = "Yesterday"
-      else if (time === "weekly") recentTime = "Last Week"
-      else recentTime = "Last Month"
+      if (time === "daily") recentTime = "Yesterday";
+      else if (time === "weekly") recentTime = "Last Week";
+      else recentTime = "Last Month";
       
       data.forEach(card => {
-        $(`.${card.title} .hours`).text(card.timeframes[time]["current"] + "hrs")
-        $(`.${card.title} .recent`).text(recentTime + " - " + card.timeframes[time]["previous"] + "hrs")
-      })
+        $(`.${card.title} .hours`).text(card.timeframes[time]["current"] + "hrs");
+        $(`.${card.title} .recent`).text(recentTime + " - " + card.timeframes[time]["previous"] + "hrs");
+      });
   })
   
