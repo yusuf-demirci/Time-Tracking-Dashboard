@@ -115,8 +115,14 @@ const data = [
       else recentTime = "Last Month"
       
       data.forEach(card => {
-        $(`.${card.title} .hours`).text(card.timeframes[time]["current"] + "hrs")
-        $(`.${card.title} .recent`).text(recentTime + " - " + card.timeframes[time]["previous"] + "hrs")
+        $(`.${card.title} .hours`).fadeOut(300, function(){
+            $(this).text(card.timeframes[time]["current"] + "hrs").fadeIn(300);
+        })
+        
+        $(`.${card.title} .recent`).fadeOut(300, function(){
+            $(this).text(recentTime + " - " + card.timeframes[time]["previous"] + "hrs").fadeIn(300);
+        })
+        
       })
   })
   
