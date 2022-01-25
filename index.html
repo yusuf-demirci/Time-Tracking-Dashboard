@@ -7,6 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Time tracking dashboard</title>
   <link rel="stylesheet" href="style.css">
+  
+  <script src="./index.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,9 +27,9 @@
           <p class="name">Jeremy Robson</p>
         </div>
         <div class="bottom">
-          <p><a href="">Daily</a></p>
-          <p><a href="">Weekly</a></p>
-          <p><a href="">Monthly</a></p>
+          <p><a class="time-info" href="#">Daily</a></p>
+          <p><a class="time-info selected" href="#">Weekly</a></p>
+          <p><a class="time-info" href="#">Monthly</a></p>
         </div>
       </section>
     </div>
@@ -41,7 +44,7 @@
           </header>
           <main>
             <p class="hours">32hrs</p>
-            <p>Last Week - 36hrs</p>
+            <p class="recent">Last Week - 36hrs</p>
           </main>
         </div>
 
@@ -57,7 +60,7 @@
           </header>
           <main>
             <p class="hours">10hrs</p>
-            <p>Last Week - 8hrs</p>
+            <p class="recent">Last Week - 8hrs</p>
           </main>
         </div>
 
@@ -73,7 +76,7 @@
           </header>
           <main>
             <p class="hours">4hrs</p>
-            <p>Last Week - 7hrs</p>
+            <p class="recent">Last Week - 7hrs</p>
           </main>
         </div>
 
@@ -88,7 +91,7 @@
           </header>
           <main>
             <p class="hours">4hrs</p>
-            <p>Last Week - 5hrs</p>
+            <p class="recent">Last Week - 5hrs</p>
           </main>
         </div>
 
@@ -104,13 +107,13 @@
           </header>
           <main>
             <p class="hours">5hrs</p>
-            <p>Last Week - 10hrs</p>
+            <p class="recent">Last Week - 10hrs</p>
           </main>
         </div>
 
       </section>
 
-      <section class="self-care">
+      <section class="selfcare">
 
         <img class="icon" src="./images/icon-self-care.svg" alt="self-care-icon">
         <div class="info">
@@ -120,14 +123,13 @@
           </header>
           <main>
             <p class="hours">2hrs</p>
-            <p>Last Week - 2hrs</p>
+            <p class="recent">Last Week - 2hrs</p>
           </main>
         </div>
 
       </section>
     </div>
   </div>
-
 
 </body>
 

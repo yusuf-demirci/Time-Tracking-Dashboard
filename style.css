@@ -107,7 +107,7 @@ h4 {
     margin-bottom: 0.5rem;
     color: hsl(0, 0%, 100%);
 }
-main p {
+.recent {
     color: hsl(236, 100%, 87%);
     font-size: 0.9rem;
 }
@@ -126,8 +126,12 @@ main p {
 .social {
     background-color: hsl(264, 64%, 52%);
 }
-.self-care {
+.selfcare {
     background-color: hsl(43, 84%, 65%);
+}
+.selected {
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
 }
 
 @media (max-width:1060px) {
@@ -135,7 +139,7 @@ main p {
         width: 50rem;
     }
 }
-@media (max-width:800px) {
+@media (max-width:810px) {
     .container {
         width: 34rem;
     }
