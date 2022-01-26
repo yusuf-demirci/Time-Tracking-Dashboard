@@ -3,8 +3,7 @@ fetch('./data.json')
     .then(response => {
         return response.json();
     })
-    .then(jsondata => {
-        let data = jsondata;
+    .then(data => {
 
         $(".time-info").click(function () {
             $(".time-info").removeClass("selected");
@@ -27,6 +26,4 @@ fetch('./data.json')
                 })
             })
         });
-
-
     });
